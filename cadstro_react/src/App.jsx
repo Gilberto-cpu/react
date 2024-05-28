@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './index.css';
 
 function App() {
   const [clientes, setClientes] = useState([]);
@@ -29,9 +29,7 @@ function App() {
       setNomeClienteInput('');
       setAnoClienteInput('');
       setIdade(true);
-    } else {
-      alert("Preencha os campos em formatos válidos.");
-    }
+    } 
   };
 
   const deletarCliente = (index) => {
